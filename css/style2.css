@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 400px;              /* altura na tela 100vh     */
+    display: flex;
+    align-items: center;        /* itens centralizados      */
+    justify-content: center;    /* conteúdo centralizado    */
+    overflow: hidden;           /* elimina scrolls bars     */
+}
+
+.section h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    padding: 40px;
+    margin: 15px;
+    z-index: 1;                 /* em que camada da nossa página ele entra */
+    opacity: 0.8;               /* mais ênfase para o fundo, menos ênfase para o texto */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
