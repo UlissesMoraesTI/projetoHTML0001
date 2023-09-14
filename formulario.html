@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleform.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email"
+            placeholder="Digite o seu e-mail">
+        </div>
+
+        <div>
+            <label for="email">E-mail com valor padrão: </label>
+            <input type="email" name="email" id="email" value="ulissesmoraes74@gmail.com">
+        </div>
+
+        <div>
+            <label for="uf">Unidade da Federação: </label>
+             <input type="radio" name="uf" value="SP"> SP
+             <input type="radio" name="uf" value="MG" checked> MG
+             <input type="radio" name="uf" value="RJ"> RJ
+             <input type="radio" name="uf" value="ES"> ES
+        </div>
+
+        <div>
+            <label>Informe onde comprou o produto: </label>
+            <!-- online -->
+            <input type="checkbox" id="online" name="online" value="Loja online">
+            <label for="online">Loja online</label>
+            <!-- física -->
+            <input type="checkbox" id="fisica" name="online" value="Loja fisica">
+            <label for="fisica">Física</label>
+            <!-- revendedor -->
+            <input type="checkbox" id="revendedor" name="online" value="Revendedor">
+            <label for="fisica">Revendedor</label>
+        </div>
+
+        <div>
+            <label for="password">Mensagem: </label>
+            <textarea name="mensagem" cols="70" rows="10" placeholder="Escreva a sua mensagem" required></textarea>
+        </div>
+
+        <div>
+            <label for="password">Informe a senha: </label>
+            <input type="password" name="password"
+            placeholder="Informe a senha">
+        </div>
+
+        <div>
+            <label for="tipo">Tipo de Mensagem</label>
+            <select name="tipo" required>
+                <option selected disabled value="">Selecione: </option>                
+                <option value="sugestao">Sugestão</option>
+                <option value="critica">Critica</option>
+                <option value="elogio">Elogio</option>                
+                <option value="reclamacao">Reclamação</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit" name="submit">Enviar</button>
+        </div>
+
+    </form>    
+</body>
+</html>

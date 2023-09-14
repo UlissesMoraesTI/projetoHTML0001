@@ -1,0 +1,25 @@
+form {
+    width: 800px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0% 0% 0% 0%;
+    text-align: left;
+    border-radius: 15px 15px 0px;
+    line-height: 40px;    
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+input, textarea {
+    outline: none;
+    border: 1px solid #ddd;
+    line-height: 40px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0);
+}
